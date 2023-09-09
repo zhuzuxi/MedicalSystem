@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/medicalsystem?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true&useGeneratedKeys=true&keyProperty="ID"
+      username: root
+      password: 123456
+
+  application:
+    name: doctorService
+
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+
+    sentinel:
+      transport:
+        dashboard: localhost:8858
+        port: 8858
+
+  devtools:
+    restart:
+      enabled: true
+
+  security:
+    user:
+      name: doctor
+      password: doctor
+      roles: doctor
+
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+    listener:
+      simple:
+        prefetch: 1
+
+
+
+server:
+  port: 8081
+#  redis:
+#    host: localhost
+#    port: 6379
+
+
+
+
