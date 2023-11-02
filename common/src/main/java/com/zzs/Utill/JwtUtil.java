@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.zzs.Common.Constant.*;
+import static com.zzs.common.Constant.*;
 
 /**
  * @description: Jwt工具类，生成JWT和认证

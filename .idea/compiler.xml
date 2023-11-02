@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="doctorService" />
         <module name="common" />
         <module name="MQ" />
-        <module name="userService" />
+        <module name="SystemService" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="userService" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MQ" options="-parameters" />
+      <module name="SystemService" options="-parameters" />
       <module name="common" options="-parameters" />
-      <module name="doctorService" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>

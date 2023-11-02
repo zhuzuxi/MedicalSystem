@@ -35,16 +35,16 @@ public class Generator {
 
 //        包相关配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.zzs.medicalsystem");//设置父包名
-        packageConfig.setEntity("Entity");//实体类存放的包名为Entity
-        packageConfig.setMapper("Dao");//Mapper类存放的包名为Dao
-        packageConfig.setController("Controller");//Controller类存放的包名为Controller
+        packageConfig.setParent("com.zzs");//设置父包名
+        packageConfig.setEntity("entity");//实体类存放的包名为Entity
+        packageConfig.setMapper("dao");//Mapper类存放的包名为Dao
+        packageConfig.setController("controller");//Controller类存放的包名为Controller
         autoGenerator.setPackageInfo(packageConfig);
 
-//        策略配置
+//        策略配置文章
         StrategyConfig strategyConfig = new StrategyConfig();
 //        strategyConfig.setInclude("doctor","mediahistory","patient");//其中输入需要代码生成器需要生成的数据库中的表名
-        strategyConfig.setInclude("mediahistory");//其中输入需要代码生成器需要生成的数据库中的表名
+        strategyConfig.setInclude("article","doctor","medicalhistory","medicaladmin","medicalappointment","modify_blog","patient","patient_article");//其中输入需要代码生成器需要生成的数据库中的表名
         strategyConfig.setEntityLombokModel(true);//是否为实体类进行Lombok的注解
         strategyConfig.setRestControllerStyle(true);//是否生成Restful风格的Controller
         strategyConfig.setLogicDeleteFieldName("deleted");//在生成的实体类中添加一个名为 "deleted" 的逻辑删除字段，并在进行数据库操作时将其自动处理为相应的 SQL 语句。

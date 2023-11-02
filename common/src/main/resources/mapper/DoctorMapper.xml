@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zzs.dao.doctorMapper">
+<mapper namespace="com.zzs.dao.DoctorDao">
 
-    <select id="getAll" resultType="Doctor">
+    <select id="getAll" resultType="com.zzs.entity.Doctor">
         select * from doctor
     </select>
 
-    <insert id="add" parameterType="Doctor">
+    <insert id="add" parameterType="com.zzs.entity.Doctor">
 
         insert into doctor
         <trim prefix="(" suffix=")" suffixOverrides=",">

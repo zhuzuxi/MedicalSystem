@@ -16,8 +16,8 @@
     <description>MedicalSystem</description>
     <modules>
 
-        <module>doctorService</module>
-        <module>userService</module>
+        <module>SystemService</module>
+<!--        <module>userService</module>-->
         <module>common</module>
     </modules>
     <properties>
@@ -205,7 +205,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>2.2.25</version>
+                <version>2022.0.0.0</version>
             </dependency>
 
         </dependencies>
