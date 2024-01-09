@@ -11,9 +11,6 @@ import com.zzs.entity.Patient;
 import com.zzs.service.IDoctorService;
 import com.zzs.service.IMediaHistoryService;
 import com.zzs.service.IMedicalappointmentService;
-import io.prometheus.client.Histogram;
-import org.apache.ibatis.annotations.Select;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 

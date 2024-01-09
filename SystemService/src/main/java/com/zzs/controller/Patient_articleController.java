@@ -7,8 +7,7 @@ import com.zzs.service.IPatient_articleService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.validation.constraints.NotNull;
-import javax.websocket.server.PathParam;
+
 
 /**
  * <p>

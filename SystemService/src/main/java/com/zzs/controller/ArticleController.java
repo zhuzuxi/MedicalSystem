@@ -6,11 +6,9 @@ import com.zzs.common.R;
 import com.zzs.entity.Article;
 import com.zzs.service.IArticleService;
 import com.zzs.service.impl.ArticleServiceImpl;
-import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 /**
